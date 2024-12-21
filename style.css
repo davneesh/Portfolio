@@ -12,7 +12,7 @@
     --bg-color: #000308;
     --second-bg-color: #000000;
     --text-color: #fff;
-    --main-color: rgb(0, 47, 255);
+    --main-color: rgb(0, 255, 0);
 }
 html{
     font-size: 60%;
@@ -202,48 +202,48 @@ span{
     }
 }
 @keyframes words {
-    0%;
+    0%,
     20%{
         content: "Learner";
     }
-    21%;
+    21%,
     40%{
         content: "Developer";
     }
-    41%;
+    41%,
     60%{
         content: "Designer";
     }
-    61%;
+    61%,
     80%{
         content: "Coder";
     }
-    81%;
+    81%,
     100%{
         content: "Student";
     } 
 }
 @keyframes typing {
-    10%;
-    15%;
-    30%;
-    35%;
-    50%;
-    55%;
-    70%;
-    75%;
-    90%;
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
     95%{
         width: 0;
     }
-    5%;
-    20%;
-    25%;
-    40%;
-    45%;
-    60%;
-    65%;
-    80%;
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
     85%{
         width: calc(100% + 8px);
     }
@@ -332,15 +332,16 @@ span{
     color: #fff;
     line-height: 22px;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 15px;
 }
-::-webkit-scrollbar-thumb{
-    background-color: var(--main-color);
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color); 
+    border-radius: 10px; 
 }
-::-webkit-track{
-    background-color: var(--bg-color);
-    width: 50px;
+::-webkit-scrollbar-track {
+    background-color: var(--bg-color); 
 }
 
  
