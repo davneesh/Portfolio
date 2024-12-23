@@ -355,9 +355,9 @@ span{
 .projects-box {
     position: relative;
     border-radius: 1rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 25px var(--main-color);
     overflow: hidden;
-    background: #1f2029;
+    background: var(--bg-color);
     transition: transform 0.3s ease-in-out;
     text-align: center; /* Center the title below */
 }
