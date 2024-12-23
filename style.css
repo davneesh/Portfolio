@@ -345,47 +345,46 @@ span{
     background-color: var(--bg-color); 
     width: 50px;
 }
-.projects{
-    padding: 100px 15px;
-    background: var(--bg-color);
-}
-.projects h2{
-    margin-bottom: 5rem;
-    color: #fff;
-}
-.projects-container{
+.projects-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
 }
-.projects-container .projects-box{
+
+.projects-box {
     position: relative;
-    border-radius: 2rem;
-    box-shadow: 0 0 25px var(--main-color);
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    display: flex;
-    margin-bottom: 10rem;
+    background: #1f2029;
+    transition: transform 0.3s ease-in-out;
+    text-align: center; /* Center the title below */
 }
-.projects-box:hover {
-    transform: translateY(-10px);
-}
+
 .projects-box img {
     width: 100%;
     height: auto;
     transition: transform 0.5s ease-in-out;
+    border-bottom: 2px solid #ddd;
 }
+
+.projects-box:hover {
+    transform: translateY(-10px);
+}
+
 .projects-box:hover img {
     transform: scale(1.1);
 }
+
 .projects-layer {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.8); /* Light background for better text visibility */
+    background: rgba(255, 255, 255, 0.8); /* Light background */
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -398,23 +397,23 @@ span{
     opacity: 1;
 }
 
-.projects-layer h4 {
-    font-size: 1.8rem;
-    color: #000; /* Black text */
-    margin-bottom: 1rem;
-    font-family: 'Poppins', sans-serif;
-}
-
 .projects-layer p {
     font-size: 1.2rem;
-    color: #333; /* Darker text for contrast */
-    margin: 0 0 1rem;
+    color: #333;
+    margin: 0;
     line-height: 1.6;
     font-family: 'Open Sans', sans-serif;
 }
 
-
-
+.project-title {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
 
 .contact{
     background-color: var(--second-bg-color);
