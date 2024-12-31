@@ -210,19 +210,19 @@ span{
     }
     21%,
     40%{
-        content: "Developer";
+        content: "Student";
     }
     41%,
     60%{
-        content: "Designer";
+        content: "Coder";
     }
     61%,
     80%{
-        content: "Coder";
+        content: "Analyst";
     }
     81%,
     100%{
-        content: "Student";
+        content: "Visualizer";
     } 
 }
 @keyframes typing {
@@ -251,13 +251,17 @@ span{
     }
 }
 .heading{
-    font-size: 8rem;
+    font-size: 7rem;
     text-align: center;
-    margin: 5rem 0;
+    margin: 3rem 0;
+}
+.subheading{
+    font-size: 4rem;
+    text-align: center;
 }
 .education{
     padding: 100px 15px;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 .education h2{
     margin-bottom: 5rem;
@@ -345,6 +349,90 @@ span{
     background-color: var(--bg-color); 
     width: 50px;
 }
+.about{
+    padding: 100px 15px;
+    background-color: var(--second-bg-color)
+}
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    padding: 0 2rem;
+}
+
+.about-left {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    background: rgba(255, 255, 255, 0.1); 
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.about-left:hover{
+    transform: scale(1.05);
+}
+
+.about-right {
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1); 
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.about-right:hover{
+    transform: scale(1.05);
+}
+
+.personal-info {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.personal-info li {
+    margin-bottom: 0.5rem;
+}
+
+.personal-info li strong {
+    color: var(--main-color);
+    margin-right: 0.5rem;
+}
+
+.skills .skill {
+    margin-bottom: 1rem;
+}
+
+.skills .skill span {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.progress-bar {
+    background: #333;
+    border-radius: 0.5rem;
+    height: 10px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar .progress {
+    height: 100%;
+    background: var(--main-color);
+    border-radius: 0.5rem;
+    transition: width 0.5s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
