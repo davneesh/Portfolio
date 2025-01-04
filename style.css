@@ -214,15 +214,15 @@ span{
     }
     41%,
     60%{
-        content: "Coder";
+        content: "Data Analyst";
     }
     61%,
     80%{
-        content: "Analyst";
+        content: "Business Analyst";
     }
     81%,
     100%{
-        content: "Visualizer";
+        content: "Data Engineer";
     } 
 }
 @keyframes typing {
@@ -447,10 +447,10 @@ span{
 
 .skills .skill span {
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    color: var(--main-color);
+    color: white;
 }
 
 .progress-bar {
@@ -619,11 +619,97 @@ span{
 .contact form .btn{
     margin-top: 2rem;
 }
+.contact-info {
+    padding: 100px 15px;
+    background-color: var(--bg-color);
+    text-align: center;
+}
+
+.info-container {
+    position: relative;
+    margin: 10rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* .info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px var(--main-color);
+    transition: transform 0.3s ease;
+    text-align: center;
+    width: 250px;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+} */
+
+.info-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #222;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+    font-size: 2rem;
+}
+.info-icon:hover {
+    transform: scale(1.2) translateY(-10px);
+    background-color: var(--main-color);
+    color: black;
+    box-shadow: 0 0 25px var(--main-color);
+} 
+
+.info-box h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.info-box p {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin: 0;
+}
+
+.info-box a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
+@media screen and (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-box {
+        width: 90%;
+    }
+}
+
 .footer{
     position: relative;
     bottom: 0;
     width: 100%;
-    padding: 40px 0;
+    padding: 20px 0;
     background-color: var(--second-bg-color);
 }
 .footer .social{
@@ -650,28 +736,8 @@ span{
     color: black;
     box-shadow: 0 0 25px var(--main-color);
 }
-.footer ul{
-    margin-top: 0;
-    padding: 0;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-    text-align: center;
-}
-.footer ul li a{
-    color: #fff;
-    border-bottom: 3px solid transparent;
-    transition: 0.3s ease-in-out;
-}
-.footer ul li a:hover{
-    border-bottom: 3px solid var(--main-color);
-}
-.footer ul li{
-    display: inline-block;
-    padding: 0 15px;
-}
-.footer .copyrights{
-    margin-top: 50px;
+ .copyrights{
+    margin-top: 40px;
     text-align: center;
     font-size: 16px;
     color: white;
