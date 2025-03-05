@@ -214,15 +214,15 @@ span{
     }
     41%,
     60%{
-        content: "Data Analyst";
+        content: "Coder";
     }
     61%,
     80%{
-        content: "Business Analyst";
+        content: "Software Developer";
     }
     81%,
     100%{
-        content: "Data Engineer";
+        content: "Project Manager";
     } 
 }
 @keyframes typing {
