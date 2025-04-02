@@ -13,23 +13,6 @@
     --second-bg-color: #131313;
     --text-color: #fff;
     --main-color: rgb(0, 102, 255);
-
-/* Dark Mode Toggle */
-.theme-toggle {
-    cursor: pointer;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-}
-
-#light-mode-icon {
-    display: none;
-    color: #f1c40f;
-}
-
-#dark-mode-icon {
-    display: block;
-    color: #555;
 }
 html{
     font-size: 60%;
