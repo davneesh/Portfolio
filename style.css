@@ -135,51 +135,101 @@ body{
 .logo span{
     text-shadow: 0 0 25px var(--main-color);
 }
+
 .navbar {
     position: fixed;
     top: 0;
-    right: -100%;
-    width: 60%;
-    height: 100vh;
+    left: 0;
+    width: 100%;
     background: var(--bg-color);
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-    transition: right 0.4s ease-in-out;
-}
-
-.navbar.active {
-    right: 0;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    transition: all 0.3s ease;
 }
 
 .navbar a {
-    margin: 1.5rem 0;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: bold;
-}
-
-.navbar a{
-    font-size: 1.8rem;
     color: var(--text-color);
-    margin-left: 4rem;
-    font-weight: 500;
+    margin: 0 1.5rem;
+    text-decoration: none;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
-}   
+}
+
 .navbar a:hover {
     color: var(--main-color);
     text-decoration: underline;
 }
-.navbar a.active{
+
+.navbar a.active {
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
 }
-#menu-icon{
+
+#menu-icon {
     font-size: 3.6rem;
     color: var(--main-color);
     display: none;
+    cursor: pointer;
 }
+
+
+.navbar.active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color);
+    z-index: 1001;
+    transition: right 0.4s ease-in-out;
+}
+
+.navbar.active a {
+    margin: 1.5rem 0;
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+   
+    #menu-icon {
+        display: block;
+    }
+
+  
+    .navbar {
+        display: none;
+    }
+
+    
+    .navbar.active {
+        display: flex;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu-icon {
+        display: none; 
+    }
+
+    .navbar a {
+        margin: 0 1rem;
+    }
+}
+
 section{
     min-height: 100vh;
     padding: 10rem 12% 10rem;
