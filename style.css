@@ -16,98 +16,13 @@
 }
 html{
     font-size: 60%;
-    overflow: hidden;
+    /* overflow: hidden; */
     overflow-y: scroll;
     overflow-x: scroll;
-    scroll-behavior: smooth;
 }
 body{
     background: var(--bg-color);
     color: var(--text-color);
-}
-/* @media screen and (max-width: 1024px) {
-    html {
-        font-size: 55%;
-    }
-    .home {
-        flex-direction: column;
-        gap: 5rem;
-        text-align: center;
-    }
-    .home-content {
-        align-items: center;
-        justify-content: center;
-    }
-    .home-img img {
-        width: 25rem;
-    }
-}
- */
-@media (max-width: 768px) {
-    html {
-        font-size: 56%;
-    }
-
-    #menu-icon {
-        display: block;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background: #0a2a42;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        display: none;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-
-    .navbar a {
-        padding: 1.5rem 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .home {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .home-img img {
-        width: 28rem;
-        margin-top: 2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    html {
-        font-size: 50%;
-    }
-
-    .home-content h1 {
-        font-size: 3.5rem;
-    }
-
-    .home-content h3 {
-        font-size: 2rem;
-    }
-
-    .text-animation h2 {
-        font-size: 1.8rem;
-    }
-
-    .btn {
-        font-size: 1.4rem;
-    }
-
-    .home-img img {
-        width: 24rem;
-    }
 }
 .header{
     position: fixed;
@@ -135,32 +50,6 @@ body{
 .logo span{
     text-shadow: 0 0 25px var(--main-color);
 }
-
-
-.navbar {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 60%;
-    height: 100vh;
-    background: var(--bg-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: right 0.4s ease-in-out;
-}
-
-.navbar.active {
-    right: 0;
-}
-
-.navbar a {
-    margin: 1.5rem 0;
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
 .navbar a{
     font-size: 1.8rem;
     color: var(--text-color);
@@ -169,10 +58,7 @@ body{
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 }   
-.navbar a:hover {
-    color: var(--main-color);
-    text-decoration: underline;
-}
+.navbar a:hover,
 .navbar a.active{
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
@@ -182,7 +68,6 @@ body{
     color: var(--main-color);
     display: none;
 }
-
 section{
     min-height: 100vh;
     padding: 10rem 12% 10rem;
@@ -329,15 +214,15 @@ span{
     }
     41%,
     60%{
-        content: "Coder";
+        content: "Data Analyst";
     }
     61%,
     80%{
-        content: "Software Developer";
+        content: "Business Analyst";
     }
     81%,
     100%{
-        content: "Project Manager";
+        content: "Data Engineer";
     } 
 }
 @keyframes typing {
