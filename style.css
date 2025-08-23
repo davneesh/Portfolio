@@ -519,7 +519,7 @@ span{
     }
 
     .home-content h1 {
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
 
     .home-content h3 {
@@ -531,8 +531,8 @@ span{
     }
 
     .home-img img {
-        width: 25rem;
-        top: 0;
+        width: 35rem;
+        top: 10;
     }
 
     .heading {
