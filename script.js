@@ -1,5 +1,4 @@
-<script>
-    let menuIcon = document.querySelector("#menu-icon");
+let menuIcon = document.querySelector("#menu-icon");
     let navbar = document.querySelector(".navbar");
 
     menuIcon.onclick = () => {
@@ -13,4 +12,3 @@
             navbar.classList.remove("active");
         };
     });
-</script>
